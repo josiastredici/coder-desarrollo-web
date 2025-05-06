@@ -1,23 +1,31 @@
 body {
   height: 100%;
-  padding: 5%;
   color: white;
+  text-align: center;
   background-color: #260101;
-  font-family: Arial, Helvetica, sans-serif
-  
-  
 }
 
 header {
-  margin-bottom: 7.5%;
+  margin: 3%;
   color: white;
-  text-align: center;
   .titulo-principal {
-    font-size: 75px;
+    font-size: 5rem;
   }
 }
+/*
 
 main {
+  nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5rem 1rem;
+    box-sizing: border-box;
+    flex-flow: row nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    justify-content: flex-start;
+  }
   p {
     margin: 0;    
     font-size: 25px;
@@ -136,4 +144,4 @@ img{
   color: lightsteelblue;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+ */
