@@ -93,3 +93,9 @@ img{
   color: lightsteelblue;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.pregunta{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 28px;
+  color: bisque;
+}
