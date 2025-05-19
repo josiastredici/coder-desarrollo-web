@@ -99,3 +99,60 @@ img{
   font-size: 28px;
   color: bisque;
 }
+
+.botonEncuesta{
+  display: flex;
+  height: 100vh;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 50px;  
+}
+
+.btnEnviar{
+  position: relative;
+  padding: 20px 50px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 10px;
+  border: 3px solid #17a2ff;
+  overflow: hidden;
+}
+
+.btnEnviar::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(10, 157, 255);
+  z-index: -2;  
+}
+
+.btnEnviar::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  left: 0;
+  bottom: -150%;
+  border-radius: 30%;
+  background-color: #151e3f;
+  z-index: -1;
+}
+
+.btnEnviar:hover:before{
+  animation: btnEnviar 2s linear both;
+}
+
+@keyframes btnEnviar{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    bottom: 100px;
+    transform: rotate(360deg);
+  }
+}
