@@ -1,0 +1,35 @@
+$pulse-color: gray;
+$fst-pos: -10px 0 10px;
+$snd-pos: 0 10px 10px;
+$third-pos: 10px 0 10px;
+$fourth-pos: 0 -10px 10px;
+
+.pulse-item {
+    animation-name: pulse;
+	animation-delay: 0.5s;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: none;
+  }
+  20% {
+    text-shadow: $fst-pos $pulse-color, $snd-pos $pulse-color, $third-pos $pulse-color, $fourth-pos $pulse-color;
+  }
+  40% {
+    text-shadow: -20px 0 20px $pulse-color,
+                 0 20px 20px $pulse-color,
+                 20px 0 20px $pulse-color,
+                 0 -20px 20px $pulse-color;
+  }
+  60% {
+    text-shadow: $fst-pos $pulse-color, $snd-pos $pulse-color, $third-pos $pulse-color, $fourth-pos $pulse-color;
+  }	
+  80% {
+    text-shadow: none;
+  }
+}

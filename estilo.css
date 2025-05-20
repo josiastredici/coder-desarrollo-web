@@ -1,14 +1,98 @@
+.pulse-item {
+  animation-name: pulse;
+  animation-delay: 0.5s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: none;
+  }
+  20% {
+    text-shadow: -10px 0 10px gray, 0 10px 10px gray, 10px 0 10px gray, 0 -10px 10px gray;
+  }
+  40% {
+    text-shadow: -20px 0 20px gray, 0 20px 20px gray, 20px 0 20px gray, 0 -20px 20px gray;
+  }
+  60% {
+    text-shadow: -10px 0 10px gray, 0 10px 10px gray, 10px 0 10px gray, 0 -10px 10px gray;
+  }
+  80% {
+    text-shadow: none;
+  }
+}
 body {
   height: 100%;
   color: white;
   text-align: center;
   background-color: #260101;
 }
-
-header {
+body header {
   margin: 3%;
   color: white;
-  .titulo-principal {
-    font-size: 5rem;
-  }
 }
+body header .titulo-principal {
+  font-size: 5rem;
+}
+body .img-main:hover {
+  filter: drop-shadow(8px 8px 10px gray);
+}
+body footer ul li {
+  padding: 0 1rem;
+}
+
+.btn:hover {
+  background-color: #A62F03;
+}
+
+.btn-menu {
+  background-color: #591202;
+  text-align: center;
+  font-weight: bolder;
+  vertical-align: middle;
+  border-radius: 0.3rem;
+  transition: background-color 0.25s ease;
+}
+.btn-menu a {
+  color: #F26716;
+  font-style: oblique;
+  text-decoration: none;
+}
+
+.btn-redirect {
+  background-color: #591202;
+  text-align: center;
+  font-weight: bolder;
+  vertical-align: middle;
+  border-radius: 0.3rem;
+  transition: background-color 0.25s ease;
+  font-size: 1.25rem;
+}
+.btn-redirect a {
+  color: white;
+  font-style: oblique;
+  text-decoration: none;
+}
+
+.btn-link {
+  background-color: #591202;
+  text-align: center;
+  font-weight: bolder;
+  vertical-align: middle;
+  border-radius: 0.3rem;
+  transition: background-color 0.25s ease;
+}
+.btn-link a {
+  color: #A62F03;
+  font-style: oblique;
+  text-decoration: none;
+}
+.btn-link a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=estilo.css.map */

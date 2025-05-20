@@ -7,160 +7,151 @@
         <link rel="stylesheet" href="estilo-pages.css">
         <title>Encuesta</title>
     </head>
-    <body>        
-        <a href="../index.html">Menú Principal</a>        
-        <h1 class="titulo">Encuesta</h1>
-        <section class="encuesta">
-            <div>
-                <ul>
-                    <ul>
-                      <li class="pregunta">¿Cuál película te gustó más?</li>        
-                      <label class="eleccion" for="elegir">Elegir:</label>
-                      <input type="radio" name="" id="">
-                      <label for="">Piratas del Caribe: La Maldición del Perla Negra</label>
-                    </ul>  
-                    <ul>
-                      <input type="radio" name="" id="">
-                      <label for="">Piratas del Caribe: El Cofre de la Muerte</label>
-                    </ul>
-                    <ul>  
-
-                      <input type="radio" name="" id="">
-                      <label for="">Piratas del Caribe: En el Fin del Mundo</label>
-                    </ul>
-                    
-                    <ul>
-                      <input type="radio" name="" id="">
-                      <label for="">Piratas del Caribe: Navengando Aguas Misteriosas</label>
-                    </ul>
-
-                    <ul>
-                      <input type="radio" name="" id="">
-                      <label for="">Piratas del Caribe: La Venganza de Salazar</label>
-                    </ul>
-                    
-                    <ul>
-                      <li class="pregunta">¿Cuál es tu personaje favorito?</li>
-                      <label class="eleccion" for="elegir">Elegir:</label>
-                      <input type="radio" name="" id="">
-                      <label for="">Jack Sparrow</label>
-                    </ul>
-                    
-                    <ul>
-                      <input type="radio" name="" id="">
-                      <label for="">Elizabeth Swann</label>
-                    </ul>  
-                    
-                    <ul>
-                      <input type="radio" name="" id="">
-                      <label for="">William Turner</label>
-                    </ul>
-
-                    <ul>
-                      <input type="radio" name="" id="">
-                      <label for="">Capitán Barbossa</label>
-                    </ul>
-
-                    <ul>
-                      <input type="radio" name="" id="">
-                      <label for="">Joshamee Gibbs</label>
-                    </ul>
-                    
-                    <ul>
-
-                      <input type="radio" name="" id="">
-                      <label for="">Otro</label>
-                    </ul>
-
-                    <li>Puntuá cada película:</li>
-                    
-                    <h3 class="calificacion">Piratas del Caribe: La Maldición del Perla Negra</h3>
-                    <label for="puntuacion">Puntuar:</label>
-                    <select name="" id="">
-                        <option value="">10</option>
-                        <option value="">9</option>
-                        <option value="">8</option>
-                        <option value="">7</option>
-                        <option value="">6</option>
-                        <option value="">5</option>
-                        <option value="">4</option>
-                        <option value="">3</option>
-                        <option value="">2</option>
-                        <option value="">1</option>                        
-                    </select>
-                    
-                    
-                    <h3 class="calificacion">Piratas del Caribe: El Cofre de la Muerte</h3>
-                    <label for="puntuacion">Puntuar:</label>
-                    <select name="" id="">
-                        <option value="">10</option>
-                        <option value="">9</option>
-                        <option value="">8</option>
-                        <option value="">7</option>
-                        <option value="">6</option>
-                        <option value="">5</option>
-                        <option value="">4</option>
-                        <option value="">3</option>
-                        <option value="">2</option>
-                        <option value="">1</option>
-                    </select>
-                    
-
-
-                    <h3 class="calificacion">Piratas del Caribe: En el Fin del Mundo</h3>
-                    <label for="puntuacion">Puntuar</label>
-                    <select name="" id="">
-                        <option value="">10</option>
-                        <option value="">9</option>
-                        <option value="">8</option>
-                        <option value="">7</option>
-                        <option value="">6</option>
-                        <option value="">5</option>
-                        <option value="">4</option>
-                        <option value="">3</option>
-                        <option value="">2</option>
-                        <option value="">1</option>
-                    </select>
-
-                    <h3 class="calificacion">Piratas del Caribe: Navegando Aguas Misteriosas</h3>
-                    <label for="puntuacion">Puntuar</label>
-                    <select name="" id="">
-                        <option value="">10</option>
-                        <option value="">9</option>
-                        <option value="">8</option>
-                        <option value="">7</option>
-                        <option value="">6</option>
-                        <option value="">5</option>
-                        <option value="">4</option>
-                        <option value="">3</option>
-                        <option value="">2</option>
-                        <option value="">1</option>
-                    </select>
-
-                    <h3 class="calificacion">Piratas del Caribe: La Venganza de Salazar</h3>
-                    <label for="puntuacion">Puntuar</label>
-                    <select name="" id="">
-                        <option value="">10</option>
-                        <option value="">9</option>
-                        <option value="">8</option>
-                        <option value="">7</option>
-                        <option value="">6</option>
-                        <option value="">5</option>
-                        <option value="">4</option>
-                        <option value="">3</option>
-                        <option value="">2</option>
-                        <option value="">1</option>
-                    </select>
-                </ul>
-
-
-                
+    <body>
+      <div>        
+        <div style="padding: 1.5%;">
+            <button class="btn btn-menu">
+                <a href="../index.html">Menú Principal</a>
+            </button>
+        </div>
+        <div class="container encuesta-page">
+          <h1 class="titulo-page">Encuesta</h1>
+          <section class="encuesta">
+            <p class="lead">¡Queremos conocer tu opinión! <br/> Completá la siguiente encuesta:</p>
+            <div class="row"> 
+              <label for="pelicula-fav" class="pregunta">¿Cuál película te gustó más?</label>
+              <select id="pelicula-fav" name="pelicula-fav">
+                <option value="peli-fav-1">Piratas del Caribe: La Maldición del Perla Negra</option>
+                <option value="peli-fav-2">Piratas del Caribe: El Cofre de la Muerte</option>
+                <option value="peli-fav-3">Piratas del Caribe: En el Fin del Mundo</option>
+                <option value="peli-fav-4">Piratas del Caribe: Navengando Aguas Misteriosas</option>
+                <option value="peli-fav-5">Piratas del Caribe: La Venganza de Salazar</option>
+              </select>            
             </div>
-        
-    </section>
-
-    <div class="botonEncuesta">
-      <a href="#" class="btnEnviar">Enviar</a>
-    </div>
+            <div class="row">
+              <label for="personaje-fav" class="pregunta">¿Cuál es tu personaje favorito?</label>
+              <select id="personaje-fav" name="personaje-fav">
+                <option value="personaje-fav-1">Jack Sparrow</option>
+                <option value="personaje-fav-2">Elizabeth Swann</option>
+                <option value="personaje-fav-3">William Turner</option>
+                <option value="personaje-fav-4">Capitán Barbossa</option>
+                <option value="personaje-fav-5">Joshamee Gibbs</option>
+                <option value="personaje-fav-6">Otro</option>
+              </select>            
+            </div>
+            <div>
+            <p class="lead">Puntuá cada película:</p>
+            </div>
+            <!--Peli 1-->
+            <div class="row">
+              <div class="col-8">
+                <h3 class="calificacion">Piratas del Caribe: La Maldición del Perla Negra</h3>
+              </div>
+              <div class="col-4">
+                <label for="puntuacion" class="pregunta">Puntuá:</label>
+                <select id="puntuacion" name="puntuacion">
+                  <option value="10">10</option>
+                  <option value="9">9</option>
+                  <option value="8">8</option>
+                  <option value="7">7</option>
+                  <option value="6">6</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option> 
+                </select>
+              </div> 
+            </div>
+            <!--Peli 2-->
+            <div class="row">
+              <div class="col-8">
+                <h3 class="calificacion">Piratas del Caribe: El Cofre de la Muerte</h3>
+              </div>
+              <div class="col-4">
+                <label for="puntuacion" class="pregunta">Puntuá:</label>
+                <select id="puntuacion" name="puntuacion">
+                  <option value="10">10</option>
+                  <option value="9">9</option>
+                  <option value="8">8</option>
+                  <option value="7">7</option>
+                  <option value="6">6</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option> 
+                </select>
+              </div> 
+            </div>
+            <!--Peli 3-->
+            <div class="row">
+              <div class="col-8">
+                <h3 class="calificacion">Piratas del Caribe: En el Fin del Mundo</h3>
+              </div>
+              <div class="col-4">
+                <label for="puntuacion" class="pregunta">Puntuá:</label>
+                <select id="puntuacion" name="puntuacion">
+                  <option value="10">10</option>
+                  <option value="9">9</option>
+                  <option value="8">8</option>
+                  <option value="7">7</option>
+                  <option value="6">6</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option> 
+                </select>
+              </div> 
+            </div>
+            <!--Peli 4-->
+            <div class="row">
+              <div class="col-8">
+                <h3 class="calificacion">Piratas del Caribe: Navegando Aguas Misteriosas</h3>
+              </div>
+              <div class="col-4">
+                <label for="puntuacion" class="pregunta">Puntuá:</label>
+                <select id="puntuacion" name="puntuacion">
+                  <option value="10">10</option>
+                  <option value="9">9</option>
+                  <option value="8">8</option>
+                  <option value="7">7</option>
+                  <option value="6">6</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option> 
+                </select>
+              </div> 
+            </div>
+            <!--Peli 5-->
+            <div class="row">
+              <div class="col-8">
+                <h3 class="calificacion">Piratas del Caribe: La Venganza de Salazar</h3>
+              </div>
+              <div class="col-4">
+                <label for="puntuacion" class="pregunta">Puntuá:</label>
+                <select id="puntuacion" name="puntuacion">
+                  <option value="10">10</option>
+                  <option value="9">9</option>
+                  <option value="8">8</option>
+                  <option value="7">7</option>
+                  <option value="6">6</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option> 
+                </select>
+              </div> 
+            </div>
+          </section>
+        </div>
+      </div>
+      <button class="btn btn-enviar">
+        <a href="#">Enviar</a>
+      </button>
     </body>
 </html>
