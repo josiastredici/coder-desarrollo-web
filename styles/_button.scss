@@ -1,0 +1,44 @@
+@import 'variables';
+
+@mixin btn($color) {
+    background-color: $color-titulo;
+    text-align: center;
+    font-weight: bolder;
+    vertical-align: middle;
+    border-radius: .3rem;
+    transition: background-color 0.25s ease;
+    a {
+        color: $color;
+        font-style: oblique;
+        text-decoration: none;
+    }
+}
+
+.btn:hover {
+    background-color: $color-subtitulo;
+}
+
+.btn-menu {
+    @include btn($color-links);
+}
+
+.btn-redirect {
+    @include btn($color-main);
+    font-size: 1.25rem;
+    // padding: .5rem 1rem;
+}
+
+.btn-link {
+    @include btn($color-subtitulo);
+    a:hover {
+        color: $color-main;
+        text-decoration: none;
+    }
+}
+
+.btn-enviar {
+    @include btn($color-main);
+    margin: 2.5%;
+    padding: 0.5% 1.5%;
+    background-color: $color-links;
+}

@@ -1,0 +1,82 @@
+@import 'variables';
+@import 'main';
+@import 'button';
+
+.titulo-page {
+    color: $color-titulo;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.peliculas-page {
+    .row {
+        padding: 1.5% 0;
+        .pelicula {
+            color: dimgray;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .resumen {
+            margin-bottom: 2%;
+            font-size: 20px;
+            font-style: oblique;
+            text-align: justify;  
+        }
+    }    
+}
+
+.reparto-page {
+    .actores{
+      font-style: oblique;
+      text-transform: uppercase;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      color: gray;
+    }
+    .parrafo-actores{
+      text-align: center;
+    }
+    .row {
+        padding: 1.5% 0;
+        img {
+            width: 50%;
+            padding-left: 5%;
+        }
+    }
+}
+
+.videojuegos-page {
+    .row {
+        padding: 2.5% 0;
+        align-items: center;
+        .juego{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: italic;
+            color: antiquewhite;
+        }
+    }
+}
+
+.encuesta-page {
+    .row {
+        width: 100%;
+        font-size: 20px;
+        padding: 1% 0;
+    }
+    .calificacion{
+        color: orangered;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    .pregunta {
+        color: bisque;
+        font-size: 28px;
+        margin-right: 1.5%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .eleccion {
+        text-decoration: underline;
+        color: lightsteelblue;
+    }
+}

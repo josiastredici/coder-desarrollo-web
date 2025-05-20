@@ -1,0 +1,27 @@
+@import 'pulse';
+
+body {
+    height: 100%;
+    color: white;
+    text-align: center;
+    background-color: $color-fondo-ppal;
+    header {
+        margin: 3%;
+        color: white;
+        .titulo-principal {
+            font-size: 5rem;
+        }
+    }
+
+    .img-main:hover {
+        filter: drop-shadow(8px 8px 10px gray);
+    }
+    
+    footer {
+        ul {
+            li {
+                padding: 0 1rem;
+            }
+        }
+    }
+}

@@ -1,158 +1,186 @@
+.pulse-item {
+  animation-name: pulse;
+  animation-delay: 0.5s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: none;
+  }
+  20% {
+    text-shadow: -10px 0 10px gray, 0 10px 10px gray, 10px 0 10px gray, 0 -10px 10px gray;
+  }
+  40% {
+    text-shadow: -20px 0 20px gray, 0 20px 20px gray, 20px 0 20px gray, 0 -20px 20px gray;
+  }
+  60% {
+    text-shadow: -10px 0 10px gray, 0 10px 10px gray, 10px 0 10px gray, 0 -10px 10px gray;
+  }
+  80% {
+    text-shadow: none;
+  }
+}
 body {
   height: 100%;
   color: white;
   text-align: center;
   background-color: #260101;
 }
-
-header {
+body header {
   margin: 3%;
   color: white;
-  .titulo-principal {
-    font-size: 5rem;
-  }
+}
+body header .titulo-principal {
+  font-size: 5rem;
+}
+body .img-main:hover {
+  filter: drop-shadow(8px 8px 10px gray);
+}
+body footer ul li {
+  padding: 0 1rem;
 }
 
-a {
+.btn:hover {
+  background-color: #A62F03;
+}
+
+.btn-menu {
+  background-color: #591202;
+  text-align: center;
+  font-weight: bolder;
+  vertical-align: middle;
+  border-radius: 0.3rem;
+  transition: background-color 0.25s ease;
+}
+.btn-menu a {
   color: #F26716;
-  font-size: 80%;
   font-style: oblique;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
-.titulo {
+.btn-redirect {
+  background-color: #591202;
+  text-align: center;
+  font-weight: bolder;
+  vertical-align: middle;
+  border-radius: 0.3rem;
+  transition: background-color 0.25s ease;
+  font-size: 1.25rem;
+}
+.btn-redirect a {
+  color: white;
+  font-style: oblique;
+  text-decoration: none;
+}
+
+.btn-link {
+  background-color: #591202;
+  text-align: center;
+  font-weight: bolder;
+  vertical-align: middle;
+  border-radius: 0.3rem;
+  transition: background-color 0.25s ease;
+}
+.btn-link a {
+  color: #A62F03;
+  font-style: oblique;
+  text-decoration: none;
+}
+.btn-link a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-enviar {
+  background-color: #591202;
+  text-align: center;
+  font-weight: bolder;
+  vertical-align: middle;
+  border-radius: 0.3rem;
+  transition: background-color 0.25s ease;
+  margin: 2.5%;
+  padding: 0.5% 1.5%;
+  background-color: #F26716;
+}
+.btn-enviar a {
+  color: white;
+  font-style: oblique;
+  text-decoration: none;
+}
+
+.titulo-page {
   color: #591202;
-  font-size: 45px;
+  font-size: 5rem;
   text-align: center;
 }
 
-.subtitulo {
-  color: #A62F03;
-  font-size: 35px;
-  margin: 0;
-  justify-self: left;
+.peliculas-page .row {
+  padding: 1.5% 0;
 }
-.pelicula {
+.peliculas-page .row .pelicula {
+  color: dimgray;
+  text-align: center;
   text-decoration: underline;
-  color: dimgray ;
 }
-
-.resumen {
+.peliculas-page .row .resumen {
   margin-bottom: 2%;
   font-size: 20px;
   font-style: oblique;
-  text-align: justify;  
+  text-align: justify;
 }
 
-.actores{
+.reparto-page .actores {
   font-style: oblique;
   text-transform: uppercase;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
   color: gray;
 }
-.juego{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.reparto-page .parrafo-actores {
+  text-align: center;
+}
+.reparto-page .row {
+  padding: 1.5% 0;
+}
+.reparto-page .row img {
+  width: 50%;
+  padding-left: 5%;
+}
+
+.videojuegos-page .row {
+  padding: 2.5% 0;
+  align-items: center;
+}
+.videojuegos-page .row .juego {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-style: italic;
   color: antiquewhite;
-
 }
 
-ul {
+.encuesta-page .row {
   width: 100%;
   font-size: 20px;
-  li {
-    padding: 1% 0;
-  }
+  padding: 1% 0;
 }
-
-.detalle-pelicula {
-  div {
-    justify-self: center;
-  }
-}
-
-img{
-  width: 20%;
-  padding-left: 5%;
-  
-}
-
-.parrafo-actores{
-  text-align: right;
-}
-
-.calificacion{
-  color: darkslategrey;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.encuesta-page .calificacion {
+  color: orangered;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 30px;
 }
-.eleccion{
+.encuesta-page .pregunta {
+  color: bisque;
+  font-size: 28px;
+  margin-right: 1.5%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.encuesta-page .eleccion {
   text-decoration: underline;
   color: lightsteelblue;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.pregunta{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 28px;
-  color: bisque;
-}
-
-.botonEncuesta{
-  display: flex;
-  height: 100vh;
-  gap: 50px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 50px;  
-}
-
-.btnEnviar{
-  position: relative;
-  padding: 20px 50px;
-  text-decoration: none;
-  color: #fff;
-  letter-spacing: 10px;
-  border: 3px solid #17a2ff;
-  overflow: hidden;
-}
-
-.btnEnviar::after{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgb(10, 157, 255);
-  z-index: -2;  
-}
-
-.btnEnviar::before{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 250px;
-  left: 0;
-  bottom: -150%;
-  border-radius: 30%;
-  background-color: #151e3f;
-  z-index: -1;
-}
-
-.btnEnviar:hover:before{
-  animation: btnEnviar 2s linear both;
-}
-
-@keyframes btnEnviar{
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    bottom: 100px;
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=estilo-pages.css.map */
